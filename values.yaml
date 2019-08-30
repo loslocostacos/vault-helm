@@ -206,6 +206,11 @@ server:
     # replicas. If you'd like a custom value, you can specify an override here.
       maxUnavailable: null
 
+    # mlock prevents memory from being swapped to disk. If the system does not
+    # utilize swap space, set to false.
+    mlock:
+      enabled: true
+
 # Vault UI
 ui:
   # True if you want to create a Service entry for the Vault UI.
